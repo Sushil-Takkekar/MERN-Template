@@ -6,32 +6,32 @@ Use this template to create MERN stack app in a faster way.
 .
 ├── node_modules
 ├── client
-│     ├── node_modules
-│     ├── public
-│     │     └── index.html
-│     ├── src
-│     │     ├── axios
-│     │     ├── components
-│     │     ├── store
-│     │     │     ├── actions
-│     │     │     ├── reducers
-│     │     │     └── store.js
-│     │     ├── utils
-│     │     ├── App.js
-│     │     └── index.js
-│     ├── .gitignore
-│     ├── package.json
-│     └── package-lock.json
+│   ├── node_modules
+│   ├── public
+│   │   └── index.html
+│   ├── src
+│   │   ├── axios
+│   │   ├── components
+│   │   ├── store
+│   │   │   ├── actions
+│   │   │   ├── reducers
+│   │   │   └── store.js
+│   │   ├── utils
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── .gitignore
+│   ├── package.json
+│   └── package-lock.json
 ├── config
 ├── src
-│     ├── db
-│     │     ├── operations
-│     │     └── db.js
-│     ├── middlewares
-│     ├── models
-│     ├── routes
-│     ├── express.js
-│     └── index.js
+│   ├── db
+│   │   ├── operations
+│   │   └── db.js
+│   ├── middlewares
+│   ├── models
+│   ├── routes
+│   ├── express.js
+│   └── index.js
 ├── .babelrc
 ├── .eslintrc.json
 ├── .gitignore
