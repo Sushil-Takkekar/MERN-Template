@@ -44,10 +44,10 @@ Use this template to create MERN stack app in a faster way.
 
 #### Use of above folder/files
 
--  **client**  : Contains frontend code - React app
--  **config**  : Store all your env variables (include this in your .gitignore file)
--  **src**     : Your entire server code
--  **.babelrc** : Babel configuration file
--  **.eslintrc.json** : ESLint configuration file
--  **webpack.config.js**     : Webpack configuration file
+-  **client**            : Contains frontend code - React app
+-  **config**            : Store all your env variables (include this in your .gitignore file)
+-  **src**               : Your entire server code
+-  **.babelrc**          : Babel configuration file
+-  **.eslintrc.json**    : ESLint configuration file
+-  **webpack.config.js** : Webpack configuration file
 
