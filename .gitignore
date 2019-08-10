@@ -1,0 +1,5 @@
+# dependencies
+/node_modules
+# /config
+
+### [NOTE : Un-comment '/config' after the setup, to prevent your sensitive info to get revealed.] ###
