@@ -15,6 +15,7 @@ Use this template to create MERN stack app in a faster way.
 │   │   ├── store
 │   │   │   ├── actions
 │   │   │   ├── reducers
+│   │   │   │   └── index.js
 │   │   │   └── store.js
 │   │   ├── utils
 │   │   ├── App.js
