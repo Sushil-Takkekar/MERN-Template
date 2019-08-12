@@ -14,6 +14,7 @@ Use this template to create MERN stack app in a faster way.
 │   │   ├── components
 │   │   ├── store
 │   │   │   ├── actions
+│   │   │   │   └── types.js
 │   │   │   ├── reducers
 │   │   │   │   └── index.js
 │   │   │   └── store.js
@@ -52,3 +53,4 @@ Use this template to create MERN stack app in a faster way.
 -  **.eslintrc.json**    : ESLint configuration file
 -  **webpack.config.js** : Webpack configuration file
 
+[ NOTE : *Remove **.gitignore** file from empty folders, if not required.*]
