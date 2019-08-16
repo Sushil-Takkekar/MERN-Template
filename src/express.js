@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 const express = require('express')
-const body_parser  = require('body-parser')
+const body_parser = require('body-parser')
 const checkSiteMaintenance = require('./middlewares/siteMaintenance')
 const { logReq, logReqError } = require('./middlewares/logger')
 
@@ -16,12 +17,12 @@ app.use(checkSiteMaintenance)
 app.use(logReq)
 
 /*** SAMPLE REQ, DELETE IT AFTER SETUP ***/
-    app.get('/', (req, res) => {
-        res.send({ data: 'Welcome to MERN template...' })
-    })
-    app.get('/error', (req, res) => {
-        throw new Error('Invalid input data')
-    })
+app.get('/', (req, res) => {
+	res.send({ data: 'Welcome to MERN template...' })
+})
+app.get('/error', (req, res) => {
+	throw new Error('Invalid input data')
+})
 /*** END OF BLOCK ***/
 
 // log error occurred while processing request
