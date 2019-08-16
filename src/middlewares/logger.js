@@ -6,7 +6,12 @@ const path = require('path')
 
 const { combine, timestamp, json } = winston.format;
 const LOG_LEVEL = process.env.LOG_LEVEL | 'info'
-const logfile_dir = path.join(__dirname, '..', '..','logs')
+
+let logfile_dir = path.resolve(__dirname, '..', '..','logs')
+// set the log-file path correctly for prod
+if(process.env.NODE_ENV === 'production') {
+    logfile_dir = path.resolve(__dirname, '..','logs')
+}
 
 // logger to log every request
 const req_logger = winston.createLogger({
@@ -17,9 +22,9 @@ const req_logger = winston.createLogger({
       ),
     transports : [
         new winston.transports.Console(),
-        new winston.transports.File({filename: path.join(logfile_dir, 'error.log'), level: 'error'}),
-        new winston.transports.File({filename: path.join(logfile_dir, 'combined.log'), level: 'info'}),
-        new winston.transports.File({filename: path.join(logfile_dir, 'debug.log'), level: 'debug'})
+        new winston.transports.File({filename: path.resolve(logfile_dir, 'error.log'), level: 'error'}),
+        new winston.transports.File({filename: path.resolve(logfile_dir, 'combined.log'), level: 'info'}),
+        new winston.transports.File({filename: path.resolve(logfile_dir, 'debug.log'), level: 'debug'})
     ]
 })
 
